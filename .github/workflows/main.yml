@@ -3,7 +3,7 @@ name: Build APK
 on:
   push:
     paths:
-      - 'iran_stock_signal_android_v78_portfolio_click_fix_github_ready.zip'
+      - 'iran_stock_signal_android_v79_portfolio_click_fix_safe_github_ready.zip'
       - '.github/workflows/main.yml'
   workflow_dispatch:
 
@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Extract project
-        run: unzip -q iran_stock_signal_android_v78_portfolio_click_fix_github_ready.zip -d source
+        run: unzip -q iran_stock_signal_android_v79_portfolio_click_fix_safe_github_ready.zip -d source
 
       - name: Set up Java
         uses: actions/setup-java@v4
