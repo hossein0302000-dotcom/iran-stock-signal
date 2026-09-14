@@ -3,7 +3,7 @@ name: Build APK
 on:
   push:
     paths:
-      - 'iran_stock_signal_android_v82_market_regime_power_fix.zip'
+      - 'iran_stock_signal_android_v83_market_regime_data_fix.zip'
       - '.github/workflows/main.yml'
   workflow_dispatch:
 
@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Extract project
-        run: unzip -q iran_stock_signal_android_v82_market_regime_power_fix.zip -d source
+        run: unzip -q iran_stock_signal_android_v83_market_regime_data_fix.zip -d source
 
       - name: Set up Java
         uses: actions/setup-java@v4
