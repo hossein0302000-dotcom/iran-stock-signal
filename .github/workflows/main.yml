@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - 'iran_stock_signal_android_v114_chart_details_groupbuy_toast.zip'
+      - 'iran_stock_signal_android_v115_chart_compile_fix.zip'
       - '.github/workflows/main.yml'
 
 jobs:
@@ -20,7 +20,7 @@ jobs:
         run: |
           set -e
           rm -rf source
-          unzip -q iran_stock_signal_android_v114_chart_details_groupbuy_toast.zip -d source
+          unzip -q iran_stock_signal_android_v115_chart_compile_fix.zip -d source
           test -f source/settings.gradle || test -f source/settings.gradle.kts
           test -f source/app/build.gradle || test -f source/app/build.gradle.kts
 
